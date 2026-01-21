@@ -1,226 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Muhammad Faisal | Lead Cloud Architect</title>
-
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#2563eb',
-            dark: '#020617'
-          }
-        }
-      }
-    }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Faisal | Lead Cloud Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(90deg, #818cf8, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
 </head>
+<body class="bg-[#0f172a] text-slate-300 selection:bg-indigo-500/30">
 
-<body class="bg-slate-50 text-slate-800 leading-relaxed">
+    <nav class="fixed top-0 w-full z-50 glass border-b border-white/5 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="text-white font-bold tracking-tighter text-xl">MF<span class="text-indigo-500">.</span></span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#skills" class="hover:text-white transition">Skills</a>
+                <a href="#projects" class="hover:text-white transition">Projects</a>
+                <a href="#experience" class="hover:text-white transition">Experience</a>
+            </div>
+            <a href="mailto:imsheikhfaisal@gmail.com" class="bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2 rounded-full text-sm font-semibold transition shadow-lg shadow-indigo-500/20">Hire Me</a>
+        </div>
+    </nav>
 
-<!-- ================= HERO ================= -->
-<header class="bg-gradient-to-br from-dark via-slate-900 to-slate-800 text-white">
-  <div class="max-w-6xl mx-auto px-6 py-20">
-    <h1 class="text-4xl md:text-5xl font-bold">Muhammad Faisal</h1>
-    <p class="mt-4 text-xl text-blue-400 font-medium">Lead Cloud Architect | IT Infrastructure & Cloud Solutions</p>
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6">
+                Muhammad <span class="gradient-text">Faisal</span>
+            </h1>
+            <p class="text-xl md:text-2xl font-light text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                Lead Cloud Architect specializing in <span class="text-indigo-400">Enterprise Infrastructure</span> & High-Scalability Cloud Solutions.
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-4 mt-10">
+                <div class="glass px-6 py-3 rounded-2xl flex items-center space-x-3">
+                    <i class="fas fa-envelope text-indigo-400"></i>
+                    <span class="text-sm">imsheikhfaisal@gmail.com</span>
+                </div>
+                <div class="glass px-6 py-3 rounded-2xl flex items-center space-x-3">
+                    <i class="fab fa-linkedin text-indigo-400"></i>
+                    <a href="https://linkedin.com/in/iammuhammadfaisal" class="text-sm hover:text-white">iammuhammadfaisal</a>
+                </div>
+                <div class="glass px-6 py-3 rounded-2xl flex items-center space-x-3">
+                    <i class="fas fa-phone text-indigo-400"></i>
+                    <span class="text-sm">+92 345 8550465</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="mt-8 flex flex-wrap gap-6 text-sm text-slate-300">
-      <span><i class="fas fa-location-dot text-blue-400 mr-2"></i>Pakistan</span>
-      <span><i class="fas fa-phone text-blue-400 mr-2"></i>+92 345 8550465</span>
-      <a href="mailto:imsheikhfaisal@gmail.com" class="hover:text-white">
-        <i class="fas fa-envelope text-blue-400 mr-2"></i>imsheikhfaisal@gmail.com
-      </a>
-      <a href="https://linkedin.com/in/iammuhammadfaisal" target="_blank" class="hover:text-white">
-        <i class="fab fa-linkedin text-blue-400 mr-2"></i>LinkedIn
-      </a>
-    </div>
-  </div>
-</header>
+    <main class="max-w-5xl mx-auto px-6 space-y-32 pb-32">
 
-<main class="max-w-6xl mx-auto px-6 py-16 space-y-20">
+        <section id="about" class="scroll-mt-32">
+            <div class="grid md:grid-cols-3 gap-12 items-start">
+                <div class="md:col-span-1">
+                    <h2 class="text-sm font-bold text-indigo-500 uppercase tracking-[0.2em] mb-4">Professional Summary</h2>
+                    <p class="text-3xl text-white font-semibold leading-tight">15+ Years of Architecting the Cloud.</p>
+                </div>
+                <div class="md:col-span-2 text-lg text-slate-400 leading-relaxed space-y-4">
+                    <p>Result-oriented IT Infrastructure & Cloud Solutions Architect with 15+ years of experience across on-premises and multi-cloud environments, including <span class="text-white">AWS, Azure, and Oracle Cloud</span>.</p>
+                    <p>Proven expertise in high availability, performance optimization, and leading cross-functional teams to align IT solutions with high-level business goals.</p>
+                </div>
+            </div>
+        </section>
 
-<!-- ================= SUMMARY ================= -->
-<section>
-  <h2 class="section-title">Professional Summary</h2>
-  <div class="card">
-    <p>
-      Result-oriented IT Infrastructure & Cloud Solutions Architect with 15+ years of experience
-      in designing, implementing, and managing enterprise-scale systems across on-premises and
-      multi-cloud environments including AWS, Azure, and Oracle Cloud. Proven expertise in
-      infrastructure design, high availability, backup & recovery, performance optimization,
-      and large-scale cloud migrations. Strong background in leading cross-functional teams,
-      driving cloud adoption, and aligning technology strategy with business continuity,
-      security, and cost optimization goals.
-    </p>
-  </div>
-</section>
+        <section id="skills" class="scroll-mt-32">
+            <h2 class="text-sm font-bold text-indigo-500 uppercase tracking-[0.2em] mb-12">Core Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass p-8 rounded-3xl hover:border-indigo-500/50 transition group">
+                    <div class="w-12 h-12 bg-indigo-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-cloud text-indigo-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-white font-bold mb-4">Cloud Platforms</h3>
+                    <p class="text-sm leading-loose">AWS (EC2, VPC, RDS, S3, IAM, Route 53, CloudWatch, CloudTrail, Elastic Beanstalk), Azure, Oracle Cloud, Office 3659.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl hover:border-indigo-500/50 transition group">
+                    <div class="w-12 h-12 bg-indigo-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-server text-indigo-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-white font-bold mb-4">Infrastructure & HA</h3>
+                    <p class="text-sm leading-loose">RHEL, CentOS, Solaris, HP-UX. Red Hat Cluster Suite, Veritas Cluster, Solaris Cluster.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl hover:border-indigo-500/50 transition group">
+                    <div class="w-12 h-12 bg-indigo-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-microchip text-indigo-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-white font-bold mb-4">Automation & DevOps</h3>
+                    <p class="text-sm leading-loose">Docker, Jenkins, Puppet, Splunk, ELK Stack, Zabbix, Nagios, Icinga.</p>
+                </div>
+            </div>
+        </section>
 
-<!-- ================= SKILLS ================= -->
-<section>
-  <h2 class="section-title">Core Skills & Expertise</h2>
-  <div class="card grid md:grid-cols-2 gap-8">
-    <ul class="list-disc ml-5 space-y-2">
-      <li><strong>Cloud Platforms:</strong> AWS, Azure, Oracle Cloud, Office 365</li>
-      <li><strong>AWS:</strong> EC2, VPC, RDS, S3, IAM, Route53, CloudWatch, CloudTrail, Elastic Beanstalk</li>
-      <li><strong>Infrastructure & OS:</strong> RHEL, CentOS, Windows, Solaris, HP-UX</li>
-      <li><strong>High Availability:</strong> Red Hat Cluster, Veritas Cluster, Solaris Cluster</li>
-    </ul>
-    <ul class="list-disc ml-5 space-y-2">
-      <li><strong>Automation & Monitoring:</strong> Puppet, Zabbix, Nagios, Icinga, ELK, Splunk</li>
-      <li><strong>Backup & Recovery:</strong> EMC Networker, NetBackup, Data Domain, HP Data Protector, AWS Glacier</li>
-      <li><strong>DevOps & Tools:</strong> Docker, Jenkins, Apache Tomcat, JIRA, Confluence, Trello</li>
-    </ul>
-  </div>
-</section>
+        <section id="projects" class="scroll-mt-32">
+            <h2 class="text-sm font-bold text-indigo-500 uppercase tracking-[0.2em] mb-12">Selected Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div class="group relative bg-white/[0.02] border border-white/5 p-8 rounded-3xl overflow-hidden hover:bg-white/[0.04] transition">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-indigo-400 text-xs font-bold tracking-widest uppercase">Global Shared Services</span>
+                        <span class="text-slate-500 text-xs italic">AWS Layer</span>
+                    </div>
+                    <h3 class="text-2xl text-white font-bold mb-4">Integration 2.0</h3>
+                    <p class="text-sm text-slate-400 mb-6 leading-relaxed">Central integration hub for 30+ enterprise systems. Architected middleware using Docker on AWS for Oracle EBS, Workday, and ServiceNow.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] border border-white/10 px-3 py-1 rounded-full uppercase">Docker</span>
+                        <span class="text-[10px] border border-white/10 px-3 py-1 rounded-full uppercase">ELK Stack</span>
+                        <span class="text-[10px] border border-white/10 px-3 py-1 rounded-full uppercase">AWS</span>
+                    </div>
+                </div>
 
-<!-- ================= EXPERIENCE ================= -->
-<section>
-  <h2 class="section-title">Professional Experience</h2>
+                <div class="group relative bg-white/[0.02] border border-white/5 p-8 rounded-3xl hover:bg-white/[0.04] transition">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-indigo-400 text-xs font-bold tracking-widest uppercase">Mobile Banking</span>
+                        <span class="text-slate-500 text-xs italic">2012 - 2014</span>
+                    </div>
+                    <h3 class="text-2xl text-white font-bold mb-4">Oracle Exadata (Easypaisa)</h3>
+                    <p class="text-sm text-slate-400 mb-6 leading-relaxed">Infrastructure Lead for PR & DR site design for Oracle Engineering Boxes. Managed hardware commissioning and readiness of Web/App services in DR.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] border border-white/10 px-3 py-1 rounded-full uppercase">Exadata</span>
+                        <span class="text-[10px] border border-white/10 px-3 py-1 rounded-full uppercase">Hardware Implementation</span>
+                    </div>
+                </div>
 
-  <div class="space-y-14">
+                <div class="group relative bg-white/[0.02] border border-white/5 p-8 rounded-3xl hover:bg-white/[0.04] transition">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-indigo-400 text-xs font-bold tracking-widest uppercase">GIS Tracking</span>
+                        <span class="text-slate-500 text-xs italic">PakVista Tech</span>
+                    </div>
+                    <h3 class="text-2xl text-white font-bold mb-4">Pakistan Railways Tracking</h3>
+                    <p class="text-sm text-slate-400 mb-6 leading-relaxed">Designed GIS-based system using GPS/GPRS tools. Configured devices for trains and routed live data to host application servers.</p>
+                </div>
 
-    <div class="timeline">
-      <h3>Lead Cloud Architect</h3>
-      <p class="company">Perseus Group, Constellation Software</p>
-      <p class="date">April 2021 – Present</p>
-      <ul>
-        <li>Leading enterprise cloud architecture and infrastructure operations across multiple global business units.</li>
-        <li>Defined and executed Azure migration strategy for 70+ diverse business units, transitioning legacy on‑prem workloads.</li>
-        <li>Established governance, security baselines, cost optimization, and operational standards.</li>
-        <li>Drove cloud adoption while ensuring business continuity and compliance.</li>
-      </ul>
-    </div>
+                <div class="group relative bg-white/[0.02] border border-white/5 p-8 rounded-3xl hover:bg-white/[0.04] transition">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-indigo-400 text-xs font-bold tracking-widest uppercase">Storage & Backup</span>
+                        <span class="text-slate-500 text-xs italic">Telenor</span>
+                    </div>
+                    <h3 class="text-2xl text-white font-bold mb-4">Data Domain DD2500</h3>
+                    <p class="text-sm text-slate-400 mb-6 leading-relaxed">Migrated entire backup infrastructure from Tape libraries to Data Domain and EMC Networker solution.</p>
+                </div>
+            </div>
+        </section>
 
-    <div class="timeline">
-      <h3>Cloud & IT Infrastructure Expert</h3>
-      <p class="company">Telenor Global Services</p>
-      <p class="date">November 2018 – April 2021</p>
-      <ul>
-        <li>Designed and deployed AWS infrastructure using EC2, ELB, VPC, RDS, S3, IAM, Route53, and Elastic Beanstalk.</li>
-        <li>Implemented monitoring, alerting, fault detection, and automated/manual recovery mechanisms.</li>
-        <li>Managed Disaster Recovery (DR) for infrastructure and applications.</li>
-        <li>Built Docker-based multi-container platforms and supported CI/CD with Jenkins.</li>
-        <li>Implemented centralized logging and monitoring using ELK Stack.</li>
-      </ul>
-    </div>
+        <section id="experience" class="scroll-mt-32">
+            <h2 class="text-sm font-bold text-indigo-500 uppercase tracking-[0.2em] mb-12">Professional Journey</h2>
+            <div class="space-y-12">
+                <div class="group relative pl-12 border-l border-white/10">
+                    <div class="absolute w-3 h-3 bg-indigo-500 rounded-full -left-[6.5px] top-2 shadow-[0_0_15px_rgba(99,102,241,0.5)]"></div>
+                    <span class="text-xs font-bold text-indigo-400 uppercase tracking-widest">April 2021 — Present</span>
+                    <h3 class="text-2xl text-white font-bold mt-1">Lead Cloud Architect</h3>
+                    <p class="text-lg text-slate-400 font-medium">Perseus Group, Constellation Software</p>
+                    <p class="mt-4 text-slate-500 leading-relaxed max-w-3xl">Leading strategy for 70+ business units. Spearheading migration of legacy on-premises workloads to Azure with focus on cost optimization and continuity.</p>
+                </div>
 
-    <div class="timeline">
-      <h3>IT Specialist</h3>
-      <p class="company">Telenor Pakistan</p>
-      <p class="date">November 2015 – November 2018</p>
-      <ul>
-        <li>System Infrastructure Architect for telecom environment supporting 36M+ subscribers.</li>
-        <li>Worked with Accenture on shared services transformation initiatives.</li>
-      </ul>
+                <div class="group relative pl-12 border-l border-white/10">
+                    <div class="absolute w-3 h-3 bg-slate-700 rounded-full -left-[6.5px] top-2"></div>
+                    <span class="text-xs font-bold text-slate-500 uppercase tracking-widest">2018 — 2021</span>
+                    <h3 class="text-2xl text-white font-bold mt-1">Cloud & IT Infrastructure Expert</h3>
+                    <p class="text-lg text-slate-400 font-medium">Telenor Global Services</p>
+                    <p class="mt-4 text-slate-500 leading-relaxed max-w-3xl">Deployed applications on AWS using EC2, RDS, and Elastic Beanstalk. Managed full Disaster Recovery (DR) life cycles.</p>
+                </div>
 
-      <p class="company mt-6">System Executive</p>
-      <p class="date">January 2014 – November 2015</p>
-      <ul>
-        <li>Managed Linux/Solaris servers and enterprise backup domains.</li>
-        <li>Implemented HA clusters using RedHat, Veritas, and Solaris.</li>
-        <li>Performed capacity planning for servers and backup infrastructure.</li>
-      </ul>
-    </div>
+                <div class="group relative pl-12 border-l border-white/10">
+                    <div class="absolute w-3 h-3 bg-slate-700 rounded-full -left-[6.5px] top-2"></div>
+                    <span class="text-xs font-bold text-slate-500 uppercase tracking-widest">2015 — 2018</span>
+                    <h3 class="text-2xl text-white font-bold mt-1">IT Specialist</h3>
+                    <p class="text-lg text-slate-400 font-medium">Telenor Pakistan</p>
+                    <p class="mt-4 text-slate-500 leading-relaxed max-w-3xl">Served as key infrastructure architect for 36M+ subscribers. Collaborated with Accenture on shared services model transition.</p>
+                </div>
+            </div>
+        </section>
 
-    <div class="timeline">
-      <h3>System Engineer</h3>
-      <p class="company">PakVista Technologies Pvt Ltd</p>
-      <p class="date">September 2010 – May 2012</p>
-      <ul>
-        <li>Provided system and network support for enterprise and government projects.</li>
-        <li>Implemented VoIP, GIS tracking, and security camera solutions.</li>
-      </ul>
-    </div>
+        <section class="grid md:grid-cols-2 gap-12">
+            <div class="glass p-10 rounded-3xl">
+                <h2 class="text-sm font-bold text-indigo-500 uppercase tracking-[0.2em] mb-6">Education</h2>
+                <h3 class="text-xl text-white font-bold">BSc Computer Engineering 45</h3>
+                <p class="text-slate-400 mt-2">University of Engineering and Technology, Taxila</p>
+                <p class="text-sm text-slate-500">2006 — 2010</p>
+            </div>
+            <div class="glass p-10 rounded-3xl">
+                <h2 class="text-sm font-bold text-indigo-500 uppercase tracking-[0.2em] mb-6">Certifications & Languages</h2>
+                <p class="text-sm leading-loose">
+                    <span class="text-white font-bold">Certs:</span> Cloud Architecture: Core Concepts 47, LPI Linux Essentials, Oracle Solaris 11 specialist, Learning Nagios.<br>
+                    <span class="text-white font-bold mt-4 block">Languages:</span> English (Professional), Urdu (Native).
+                </p>
+            </div>
+        </section>
 
-  </div>
-</section>
+    </main>
 
-<!-- ================= PROJECTS ================= -->
-<section>
-  <h2 class="section-title">Key Projects</h2>
-  <div class="grid md:grid-cols-2 gap-10">
-
-    <div class="card">
-      <h3>Integration 2.0 – Global Middleware Platform</h3>
-      <p class="tag">Telenor Global Services</p>
-      <ul>
-        <li>Designed global shared services middleware on AWS for 30+ enterprise systems.</li>
-        <li>Containerized platform using Docker with centralized logging via ELK.</li>
-      </ul>
-      <p class="skills">AWS · Docker · ELK · Solution Architecture</p>
-    </div>
-
-    <div class="card">
-      <h3>Oracle Exadata – Mobile Banking (Easypaisa)</h3>
-      <ul>
-        <li>Infrastructure lead for PR & DR Exadata deployments.</li>
-        <li>Ensured power, space, cooling, network readiness, and integration.</li>
-      </ul>
-      <p class="skills">Oracle Exadata · DR · Infrastructure Design</p>
-    </div>
-
-    <div class="card">
-      <h3>EMC Networker & Data Domain Deployment</h3>
-      <ul>
-        <li>Migrated backup infrastructure from HP Data Protector to EMC Networker.</li>
-        <li>Deployed Data Domain DD2500 and retired tape libraries.</li>
-      </ul>
-      <p class="skills">Backup · EMC · Data Domain</p>
-    </div>
-
-    <div class="card">
-      <h3>Railways Tracking System – Pakistan Railways</h3>
-      <ul>
-        <li>Designed GIS/GPS/GPRS-based online tracking platform.</li>
-        <li>Integrated live GPS data with host application servers.</li>
-      </ul>
-      <p class="skills">GIS · GPS · Linux</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= EDUCATION ================= -->
-<section>
-  <h2 class="section-title">Education & Certifications</h2>
-  <div class="grid md:grid-cols-2 gap-8">
-    <div class="card">
-      <p><strong>BSc Computer Engineering</strong><br>UET Taxila (2006 – 2010)</p>
-    </div>
-    <div class="card">
-      <ul class="list-disc ml-5 space-y-2">
-        <li>LPI Linux Essentials</li>
-        <li>Oracle Solaris 11 Certified</li>
-        <li>Learning Nagios</li>
-        <li>Languages: English, Urdu</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer class="bg-dark text-slate-400 text-center py-8 text-xs tracking-widest">
-  © 2026 Muhammad Faisal · Lead Cloud Architect
-</footer>
-
-<style>
-  .section-title { @apply text-3xl font-bold mb-8; }
-  .card { @apply bg-white p-8 rounded-xl border shadow-sm; }
-  .timeline h3 { @apply text-xl font-semibold; }
-  .company { @apply text-primary font-medium; }
-  .date { @apply text-sm text-slate-500 mb-3; }
-  .timeline ul { @apply list-disc ml-5 space-y-2; }
-  .tag { @apply inline-block text-xs uppercase bg-slate-200 px-3 py-1 rounded-full mb-3; }
-  .skills { @apply text-xs text-slate-500 mt-4; }
-</style>
+    <footer class="py-20 border-t border-white/5 text-center">
+        <p class="text-slate-500 text-sm">© 2026 Muhammad Faisal. Crafted for Cloud Excellence.</p>
+    </footer>
 
 </body>
 </html>
